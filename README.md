@@ -54,6 +54,8 @@ On any link you find while browsing the wiki: items in shops, merge shops and ot
 
 ## AQW Wiki Copy Join
 
+![On map/locations pages shows a copy button for QOL](assets/copy-join-example.gif)
+
 On map pages, teleport commands like `/join tercessuinotlim`` get a **Copy** button next to them. One click puts the command in your clipboard, so you don't have to select it by hand or memorize it.
 
 The button shows "Copied!" when it works, and "Error" if your browser blocks access to the clipboard.
