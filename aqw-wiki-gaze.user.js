@@ -3,7 +3,7 @@
 // @namespace    https://github.com/soyquetzal/aqw-wiki-gaze
 // @version      1.0.0
 // @description  Hover previews for the AQW Wiki: image, rarity, membership, damage range and bonuses.
-// @author       Rambotito
+// @author       soyquetzal
 // @license      MIT
 // @homepageURL  https://github.com/soyquetzal/aqw-wiki-gaze
 // @supportURL   https://github.com/soyquetzal/aqw-wiki-gaze/issues
