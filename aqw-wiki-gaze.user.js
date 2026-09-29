@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         AQW Wiki Gaze
 // @namespace    https://github.com/soyquetzal/aqw-wiki-gaze
-// @version      1.0.0
+// @version      1.1.0
 // @description  Hover previews for the AQW Wiki: image, rarity, membership, damage range and bonuses.
 // @author       soyquetzal
 // @license      MIT
@@ -32,7 +32,7 @@
   const BACKOFF = { baseMs: 60_000, maxMs: 300_000, jitterMs: 2_000 };
   const CACHE = { memoryMax: 300, failureTtlMs: 300_000, failureMax: 200 };
   const STORE = {
-    key: "aqw-wiki-gaze:v1",
+    key: "aqw-wiki-gaze:v2",
     maxEntries: 1_500,
     freshMs: 24 * 3_600_000,
     maxAgeMs: 7 * 24 * 3_600_000,
@@ -43,25 +43,32 @@
 
   // Key order is display order.
   const TAG_DEFINITIONS = {
-    "ioda-excl":    { label: "NO IoDA",       color: "#b91c1c", border: "#ef4444" },
-    ac:             { label: "AC",            color: "#168aad" },
-    rare:           { label: "RARE",          color: "#7b2cbf" },
-    "pseudo-rare":  { label: "PSEUDO-RARE",   color: "#9d4edd", border: "#e0aaff" },
-    seasonal:       { label: "SEASONAL",      color: "#2a9d8f", border: "#a8e6cf" },
-    specialoffer:   { label: "SPECIAL OFFER", color: "#d97706", border: "#fde68a" },
-    legend:         { label: "LEGEND",        color: "#b7791f" },
-    cpboost:        { label: "CP BOOST",      color: "#6366f1", border: "#c7d2fe" },
-    goldboost:      { label: "GOLD BOOST",    color: "#ca8a04", border: "#fde68a" },
-    repboost:       { label: "REP BOOST",     color: "#0891b2", border: "#a5f3fc" },
-    xpboost:        { label: "XP BOOST",      color: "#16a34a", border: "#bbf7d0" },
-    xdmg2chaos:     { label: "CHAOS DMG",     color: "#9b2226" },
-    xdmg2dragon:    { label: "DRAGON DMG",    color: "#c2410c" },
-    xdmg2drakath:   { label: "DRAKATH DMG",   color: "#7f1d1d" },
-    xdmg2elemental: { label: "ELEMENTAL DMG", color: "#2563eb" },
-    xdmg2human:     { label: "HUMAN DMG",     color: "#475569" },
-    xdmg2monsters:  { label: "ALL DMG",       color: "#dc2626", border: "#fecaca" },
-    xdmg2orc:       { label: "ORC DMG",       color: "#166534" },
-    xdmg2undead:    { label: "UNDEAD DMG",    color: "#4c1d95" }
+    "ioda-excl":    { label: "NO IoDA",        color: "#b91c1c", border: "#ef4444" },
+    ac:             { label: "AC",             color: "#168aad" },
+    rare:           { label: "RARE",           color: "#7b2cbf" },
+    "pseudo-rare":  { label: "PSEUDO-RARE",    color: "#9d4edd", border: "#e0aaff" },
+    seasonal:       { label: "SEASONAL",       color: "#2a9d8f", border: "#a8e6cf" },
+    specialoffer:   { label: "SPECIAL OFFER",  color: "#d97706", border: "#fde68a" },
+    legend:         { label: "LEGEND",         color: "#b7791f" },
+    cpboost:        { label: "CP BOOST",       color: "#6366f1", border: "#c7d2fe" },
+    goldboost:      { label: "GOLD BOOST",     color: "#ca8a04", border: "#fde68a" },
+    repboost:       { label: "REP BOOST",      color: "#0891b2", border: "#a5f3fc" },
+    xpboost:        { label: "XP BOOST",       color: "#16a34a", border: "#bbf7d0" },
+    xdmg2chaos:     { label: "CHAOS DMG",      color: "#9b2226" },
+    xdmg2dragon:    { label: "DRAGON DMG",     color: "#c2410c" },
+    xdmg2drakath:   { label: "DRAKATH DMG",    color: "#7f1d1d" },
+    xdmg2elemental: { label: "ELEMENTAL DMG",  color: "#2563eb" },
+    xdmg2human:     { label: "HUMAN DMG",      color: "#475569" },
+    xdmg2monsters:  { label: "ALL DMG",        color: "#dc2626", border: "#fecaca" },
+    xdmg2orc:       { label: "ORC DMG",        color: "#166534" },
+    xdmg2undead:    { label: "UNDEAD DMG",     color: "#4c1d95" },
+    // Monster race tags. Same palette as the matching *dmg tag so the
+    // visual association is obvious at a glance.
+    chaoskind:      { label: "CHAOS KIND",     color: "#9b2226" },
+    dragonkind:     { label: "DRAGON KIND",    color: "#c2410c" },
+    drakathkind:    { label: "DRAKATH KIND",   color: "#7f1d1d" },
+    elementalkind:  { label: "ELEMENTAL KIND", color: "#2563eb" },
+    undeadkind:     { label: "UNDEAD KIND",    color: "#4c1d95" }
   };
 
   const DAMAGE_FAMILIES = {
@@ -440,9 +447,9 @@
 
   function collectRawTags(doc) {
     const tags = new Set();
-    const links = doc.querySelectorAll(
-      "#page-tags a, .page-tags a, a[href*='/system:page-tags/tag/']"
-    );
+    // Only the page's own tag list. Links to tag pages inside the content
+    // (such as the race icons on monster pages) are not tags of the page.
+    const links = doc.querySelectorAll("#page-tags a, .page-tags a");
 
     for (const link of links) {
       const match = (link.getAttribute("href") || "")
