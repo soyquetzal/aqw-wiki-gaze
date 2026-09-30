@@ -1,0 +1,15 @@
+{
+  "name": "aqw-wiki-gaze-data",
+  "private": true,
+  "type": "module",
+  "description": "Crawler that builds the static preview data used by AQW Wiki Gaze.",
+  "scripts": {
+    "crawl": "node tools/crawler/crawl.mjs"
+  },
+  "dependencies": {
+    "linkedom": "^0.18.5"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
