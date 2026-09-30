@@ -1,5 +1,9 @@
-// Page parsing, ported from the AQW Wiki Gaze userscript (v1.1.0).
-// The only differences are the exports and the missing DOM globals.
+// Page parsing. The damage, bonus and image logic comes from the AQW Wiki Gaze
+// userscript (v1.1.0); category, fields and relations are new in format 2.
+
+// Bump this when the stored data changes shape. Pages saved with an older
+// format are fetched again automatically.
+export const FORMAT = 2;
 
 const WIKI_HOST = "aqwwiki.wikidot.com";
 
@@ -97,15 +101,19 @@ function parseRange(text) {
 }
 
 export function parsePage(doc) {
-  const rawTags = collectRawTags(doc);
-  const tags = TAG_KEYS.filter(tag => rawTags.has(tag));
+  const tags = collectRawTags(doc);
+  const known = TAG_KEYS.filter(tag => tags.has(tag));
+  const content = doc.querySelector("#page-content");
 
   return {
     name: findPageName(doc),
+    category: findCategory(doc),
+    tags: [...tags],
     images: findImages(doc),
-    tags,
-    damage: findDamage(doc, rawTags),
-    bonuses: findBonusAmounts(doc, tags)
+    damage: findDamage(doc, tags),
+    bonuses: findBonusAmounts(doc, known),
+    fields: content ? findFields(content) : {},
+    relations: content ? findRelations(content) : {}
   };
 }
 
@@ -130,13 +138,153 @@ function collectRawTags(doc) {
 
     try {
       const tag = decodeURIComponent(match[1]).trim().toLowerCase();
-      if (tag) tags.add(tag);
+      // Skip the alphabetical index tags (_a, _b, ...); keep the rest.
+      if (tag && !/^_[a-z0-9]$/.test(tag)) tags.add(tag);
     } catch {
       // Malformed escape sequence in the href; skip it.
     }
   }
 
   return tags;
+}
+
+// Breadcrumb path without the home link and without the page itself,
+// e.g. ["Items", "Weapons", "Swords"] or ["World", "Monsters"].
+function findCategory(doc) {
+  return [...doc.querySelectorAll("#breadcrumbs a")]
+    .filter(link => !["/", "/main"].includes(link.getAttribute("href")))
+    .map(link => cleanText(link.textContent))
+    .filter(Boolean);
+}
+
+// Blocks that describe skills, attacks or shop tables. Their labels ("Type:",
+// "Cooldown:", ...) are not about the page itself.
+const NESTED_BLOCKS =
+  ".collapsible-block, .skills, .skills-container, table, .yui-content";
+
+const FIELD_LABELS = {
+  "level": "level",
+  "base level": "level",
+  "difficulty": "difficulty",
+  "total hp": "hp",
+  "rarity": "rarity",
+  "price": "price",
+  "map name": "map",
+  "room limit": "rooms",
+  "stat model": "model"
+};
+
+const RELATION_LABELS = {
+  "locations": "loc",
+  "location": "loc",
+  "monsters": "mon",
+  "npcs": "npc",
+  "quests": "qst",
+  "shops": "shp"
+};
+
+const NUMERIC_FIELDS = new Set(["level", "rooms"]);
+const BLOCK_NAMES = new Set(["BR", "STRONG", "B", "UL", "OL", "DIV", "TABLE"]);
+
+// "Level:" -> "level". Returns "" when the element is not a "Label:" heading.
+function labelName(element) {
+  const text = cleanText(element.textContent);
+  return text.endsWith(":") ? text.slice(0, -1).trim().toLowerCase() : "";
+}
+
+// Siblings that follow a label on the same line, up to the next <br>.
+function nodesAfterLabel(label) {
+  const nodes = [];
+  for (let node = label.nextSibling; node; node = node.nextSibling) {
+    if (BLOCK_NAMES.has(node.nodeName)) break;
+    nodes.push(node);
+  }
+  return nodes;
+}
+
+function slugFromHref(href) {
+  if (!href) return null;
+  try {
+    const url = new URL(href, `https://${WIKI_HOST}/`);
+    if (url.hostname !== WIKI_HOST && url.hostname !== `www.${WIKI_HOST}`) {
+      return null;
+    }
+    const slug = decodeURIComponent(url.pathname.slice(1));
+    return slug && !slug.includes("/") ? slug : null;
+  } catch {
+    return null;
+  }
+}
+
+function slugsIn(element) {
+  const slugs = [];
+  const anchors = element.nodeName === "A" ? [element] : element.querySelectorAll("a");
+  for (const anchor of anchors) {
+    const slug = slugFromHref(anchor.getAttribute("href"));
+    if (slug && !slugs.includes(slug)) slugs.push(slug);
+  }
+  return slugs;
+}
+
+// Short "Label: value" lines that help to classify a page.
+function findFields(content) {
+  const fields = {};
+
+  for (const label of content.querySelectorAll("strong, b")) {
+    if (label.closest(NESTED_BLOCKS)) continue;
+
+    const key = FIELD_LABELS[labelName(label)];
+    if (!key || fields[key] !== undefined) continue;
+
+    const value = cleanText(
+      nodesAfterLabel(label).map(node => node.textContent).join("")
+    ).slice(0, 60);
+    if (!value || /^(?:n\/a|none|-)$/i.test(value)) continue;
+
+    if (NUMERIC_FIELDS.has(key) && /^\d+$/.test(value)) fields[key] = Number(value);
+    else fields[key] = value;
+  }
+
+  return fields;
+}
+
+// Links found under headings such as "Locations:", "Monsters:" or "Shops:".
+// Each list item becomes one group of slugs, so pairs like "shop - map" on
+// an item page keep their meaning.
+function findRelations(content) {
+  const relations = {};
+
+  for (const label of content.querySelectorAll("strong, b")) {
+    if (label.closest(NESTED_BLOCKS)) continue;
+
+    const key = RELATION_LABELS[labelName(label)];
+    if (!key) continue;
+
+    const groups = [];
+    const after = nodesAfterLabel(label);
+
+    // Single-line form: "Location: <a>Some Map</a>".
+    const inline = [];
+    for (const node of after) {
+      if (node.nodeType === 1) inline.push(...slugsIn(node));
+    }
+    if (inline.length) groups.push(inline);
+
+    // Heading form: the label alone in its paragraph, list right after it.
+    const paragraph = label.closest("p");
+    const list = paragraph && paragraph.nextElementSibling;
+    const headingOnly = !cleanText(after.map(node => node.textContent).join(""));
+    if (headingOnly && list && (list.nodeName === "UL" || list.nodeName === "OL")) {
+      for (const item of list.children) {
+        const slugs = slugsIn(item);
+        if (slugs.length) groups.push(slugs);
+      }
+    }
+
+    if (groups.length) (relations[key] ||= []).push(...groups);
+  }
+
+  return relations;
 }
 
 function findDamage(doc, rawTags) {
