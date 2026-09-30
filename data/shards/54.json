@@ -1,7 +1,7 @@
 {
 "blessed-naval-cutlass-special":{"m":"2026-09-26T11:11:53","n":"Blessed Naval Cutlass (Special)","i":["https://i.imgur.com/KFYeSKe.png"],"t":["ac","seasonal","specialoffer"],"d":["defaultdmg",27,33]},
-"drakath-s-quests":{"m":"2026-09-29T22:45:37"},
-"dual-celestial-cutlasses-special":{"m":"2026-09-26T11:13:30","n":"Dual Celestial Cutlasses (Special)","i":["https://i.imgur.com/yzYfH2Y.png"],"t":["ac","seasonal","specialoffer"],"d":["defaultdmg",27,33]},
-"grimblade-10":{"m":"2026-09-29T19:48:34","n":"GrimBlade +10","i":["https://i.imgur.com/R8A8zxD.png"],"t":["legend","goldboost","repboost"],"d":["defaultdmg",27,33],"b":{"repboost":5,"goldboost":3}},
-"serket-attendant-hair":{"m":"2026-09-26T16:57:54","n":"Serket Attendant Hair","i":["https://i.imgur.com/Nr3t8fX.png"],"t":["ioda-excl","ac"]}
+"drakath-s-quests":{"m":"2026-09-29T22:45:37","v":2,"n":"Drakath's Quests","c":"World>Quests","t":["aqwbirthday","concert","daily","freeplayer","quest","tlapd","tmbg","war"]},
+"dual-celestial-cutlasses-special":{"m":"2026-09-26T11:13:30","v":2,"n":"Dual Celestial Cutlasses (Special)","c":"Items>Weapons>Daggers","t":["0ac","ac","cutlass","dagger","defaultdmg","jewelry","pirate","seasonal","shopitem","specialoffer","sword","tlapd"],"i":["https://i.imgur.com/yzYfH2Y.png"],"d":["defaultdmg",27,33],"f":{"price":"0 AC","rarity":"Seasonal Rarity"},"r":{"loc":[["september-seasonal-shop","book-of-lore"]]}},
+"grimblade-10":{"m":"2026-09-29T19:48:34","v":2,"n":"GrimBlade +10","c":"Items>Weapons>Swords","t":["clickactivated","defaultdmg","drop","goldboost","legend","limbs","questreward","repboost","skeletal","sword"],"i":["https://i.imgur.com/R8A8zxD.png"],"d":["defaultdmg",27,33],"b":{"repboost":5,"goldboost":3},"f":{"rarity":"Epic Rarity"},"r":{"loc":[["doom-vault-b"]]}},
+"serket-attendant-hair":{"m":"2026-09-26T16:57:54","v":2,"n":"Serket Attendant Hair","c":"Items>Helmets & Hoods","t":["0ac","ac","aegift","drop","freeplayer","hair","helm","ioda-excl"],"i":["https://i.imgur.com/Nr3t8fX.png"],"f":{"price":"N/A (Dropped by Queen Meresankh)","rarity":"Unknown Rarity"},"r":{"loc":[["meresankh-chambers"]]}}
 }

@@ -1,7 +1,7 @@
 {
-"awescended-cutlasses-ac":{"m":"2026-09-26T11:43:42","n":"Awescended Cutlasses (AC)","i":["https://i.imgur.com/WAOQupg.png","https://i.imgur.com/3ewEQJ9.png"],"t":["ac","seasonal"],"d":["defaultdmg",27,33]},
-"dainty-isthmian-confident-isthmian":{"m":"2026-09-26T18:46:00","n":"Dainty Isthmian & Confident Isthmian","i":["https://i.imgur.com/SwDEhbv.png"],"t":["seasonal"]},
-"deep-sailor-morph":{"m":"2026-09-26T17:08:19","n":"Deep Sailor Morph","i":["https://i.imgur.com/8clBBVz.png"],"t":["ioda-excl","ac"]},
-"hypefiend-s-eyemask":{"m":"2026-09-28T10:47:12"},
-"hypefiend-s-runes":{"m":"2026-09-26T20:08:52"}
+"awescended-cutlasses-ac":{"m":"2026-09-26T11:43:42","v":2,"n":"Awescended Cutlasses (AC)","c":"Items>Weapons>Daggers","t":["0ac","ac","animated","cutlass","dagger","defaultdmg","inscription","jewelry","seasonal","shopitem","tlapd"],"i":["https://i.imgur.com/WAOQupg.png","https://i.imgur.com/3ewEQJ9.png"],"d":["defaultdmg",27,33],"f":{"price":"0 AC","rarity":"Seasonal Rarity"},"r":{"loc":[["deadly-seas-collection-shop","deadly-seas-collection-pet"]]}},
+"dainty-isthmian-confident-isthmian":{"m":"2026-09-26T18:46:00","v":2,"n":"Dainty Isthmian & Confident Isthmian","c":"World>NPCs","t":["fish","freeplayer","hybrid","npc","seasonal","tlapd"],"i":["https://i.imgur.com/SwDEhbv.png"],"r":{"loc":[["deadly-seas"]]}},
+"deep-sailor-morph":{"m":"2026-09-26T17:08:19","v":2,"n":"Deep Sailor Morph","c":"Items>Helmets & Hoods","t":["0ac","ac","drop","freeplayer","glowingeyes","hair","headband","helm","ioda-excl","morph","scar","tlapd"],"i":["https://i.imgur.com/8clBBVz.png"],"f":{"price":"N/A (Dropped by Isthmian Leviathan)","rarity":"Seasonal Rarity"},"r":{"loc":[["deadly-seas"]]}},
+"hypefiend-s-eyemask":{"m":"2026-09-28T10:47:12","v":2,"n":"HypeFiend's Eyemask","t":["disambiguation"]},
+"hypefiend-s-runes":{"m":"2026-09-26T20:08:52","v":2,"n":"HypeFiend's Runes","t":["disambiguation"]}
 }

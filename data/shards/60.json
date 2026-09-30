@@ -1,5 +1,5 @@
 {
-"fallen-king-s-scythe-3":{"m":"2026-09-29T19:49:39","n":"Fallen King's Scythe +3","i":["https://aqwwiki.wdfiles.com/local--files/fallen-king-s-scythe/FallenKing'sScythe.png"],"t":["ioda-excl","ac","pseudo-rare","specialoffer","cpboost","xdmg2chaos"],"d":["defaultdmg",27,33],"b":{"xdmg2chaos":3,"cpboost":3}},
-"hypefiend-s-bubble-gun-ac":{"m":"2026-09-28T10:52:56","n":"HypeFiend's Bubble Gun (AC)","i":["https://i.imgur.com/vT5Upus.png","https://i.imgur.com/JSBL6Hy.png"],"t":["ac","rare"],"d":["defaultdmg",27,33]},
-"hypefiend-s-locks":{"m":"2026-09-28T10:47:54"}
+"fallen-king-s-scythe-3":{"m":"2026-09-29T19:49:39","v":2,"n":"Fallen King's Scythe +3","c":"Items>Weapons>Polearms","t":["0ac","ac","chaos","cpboost","defaultdmg","facialhair","glowingeyes","heromart","horns","ioda-excl","model","parody","polearm","pseudo-rare","questreward","royalty","scythe","specialoffer","xdmg2chaos"],"i":["https://aqwwiki.wdfiles.com/local--files/fallen-king-s-scythe/FallenKing'sScythe.png"],"d":["defaultdmg",27,33],"b":{"xdmg2chaos":3,"cpboost":3},"f":{"price":"N/A (Reward from the 'Chaos Forge Enchantment' quest)","rarity":"Collector Rarity"},"r":{"loc":[["sneevil-smith"]]}},
+"hypefiend-s-bubble-gun-ac":{"m":"2026-09-28T10:52:56","v":2,"n":"HypeFiend's Bubble Gun (AC)","c":"Items>Weapons>Guns","t":["ac","animated","click2change","defaultdmg","gun","parody","rare","shopitem","staffbirthday"],"i":["https://i.imgur.com/vT5Upus.png","https://i.imgur.com/JSBL6Hy.png"],"d":["defaultdmg",27,33],"f":{"price":"300 AC","rarity":"Rare Rarity"},"r":{"loc":[["nulgath-s-birthday","game-menu"]]}},
+"hypefiend-s-locks":{"m":"2026-09-28T10:47:54","v":2,"n":"HypeFiend's Locks","t":["disambiguation"]}
 }

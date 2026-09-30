@@ -1,7 +1,7 @@
 {
 "blessed-and-celestial-cutlasses":{"m":"2026-09-26T11:09:12"},
-"captain-rhubarb":{"m":"2026-09-26T18:47:03","n":"Captain Rhubarb","i":["https://imgur.com/gkprGti.png","https://i.imgur.com/TVWFKnd.png"]},
-"silver-alpha-pirate-armor-infinity":{"m":"2026-09-27T12:51:27","n":"Silver Alpha Pirate Armor (Infinity)","i":["https://i.imgur.com/ZMZao65.png","https://i.imgur.com/OeYR0jo.png"],"t":["ioda-excl"]},
-"stormking-naval-bandana-0-ac":{"m":"2026-09-26T11:36:32","n":"StormKing Naval Bandana (0 AC)","i":["https://i.imgur.com/TcsBLiR.png"],"t":["ac"]},
-"swepo-test":{"m":"2026-09-28T06:34:47","n":"Swepo Test","i":["https://www.wikidot.com/avatar.php?userid=6664900&amp;size=small&amp;timestamp=1790577287"]}
+"captain-rhubarb":{"m":"2026-09-26T18:47:03","v":2,"n":"Captain Rhubarb","c":"World>NPCs","t":["ae-staff","aqwbirthday","facialhair","freeplayer","human","npc","pirate","scar","tlapd","vendor","war"],"i":["https://imgur.com/gkprGti.png","https://i.imgur.com/TVWFKnd.png"],"r":{"loc":[["alutea-nursery-location"],["birthday"],["castle-gaheris"],["cetoleon-war"],["deadly-seas"],["dragon-capital"],["dragonpirate"],["event-hub"],["heart-of-the-sea"],["kaiju-war"],["lolosia"],["low-tide"],["pirate-alliance"],["pirate-hunt"],["september-hub"],["termina-temple"],["wrath-location"],["yulgar-s-party"]]}},
+"silver-alpha-pirate-armor-infinity":{"m":"2026-09-27T12:51:27","v":2,"n":"Silver Alpha Pirate Armor (Infinity)","c":"Items>Armors","t":["armor","belt","collar","infinity","ioda-excl","naval","pirate","questreward","scar","shopitem","tlapd"],"i":["https://i.imgur.com/ZMZao65.png","https://i.imgur.com/OeYR0jo.png"],"f":{"rarity":"Legendary Rarity"}},
+"stormking-naval-bandana-0-ac":{"m":"2026-09-26T11:36:32","v":2,"n":"StormKing Naval Bandana (0 AC)","c":"Items>Helmets & Hoods","t":["0ac","ac","darkblood","hair","headband","helm","horns","jewelry","shopitem","tlapd"],"i":["https://i.imgur.com/TcsBLiR.png"],"f":{"price":"0 AC","rarity":"Rare Rarity"},"r":{"loc":[["deadly-seas-collection-shop","deadly-seas-collection-pet"]]}},
+"swepo-test":{"m":"2026-09-28T06:34:47","v":2,"n":"Swepo Test","t":["_test"],"i":["https://www.wikidot.com/avatar.php?userid=6664900&amp;size=small&amp;timestamp=1790577287"]}
 }

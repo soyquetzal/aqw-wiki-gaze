@@ -1,5 +1,6 @@
 {
-"bloodsail-deadeye-rifle-rifle":{"m":"2026-09-28T10:07:59","n":"Bloodsail Deadeye Rifle (Rifle)","i":["https://i.imgur.com/P1rgAN3.png"],"t":["ac"],"d":["defaultdmg",27,33]},
-"cursecaster-naval-locks-ac":{"m":"2026-09-27T14:15:52","n":"CurseCaster Naval Locks (AC)","i":["https://i.imgur.com/NqVmDH5.png"],"t":["ac"]},
-"stars-destroyed":{"m":"2026-09-27T19:39:37","n":"Stars Destroyed","t":["ac"]}
+"bloodsail-deadeye-rifle-rifle":{"m":"2026-09-28T10:07:59","v":2,"n":"Bloodsail Deadeye Rifle (Rifle)","c":"Items>Weapons>Rifles","t":["0ac","ac","aegift","defaultdmg","drop","freeplayer","mechanical","rifle","tlapd"],"i":["https://i.imgur.com/P1rgAN3.png"],"d":["defaultdmg",27,33],"f":{"price":"N/A (Dropped by Reaper of the Sea)","rarity":"Rare Rarity"},"r":{"loc":[["isthmia-castle"]]}},
+"cursecaster-naval-locks-ac":{"m":"2026-09-27T14:15:52","v":2,"n":"CurseCaster Naval Locks (AC)","c":"Items>Helmets & Hoods","t":["ac","hair","helm","horns","shopitem","tlapd"],"i":["https://i.imgur.com/NqVmDH5.png"],"f":{"price":"150 AC","rarity":"Rare Rarity"},"r":{"loc":[["quibble-coinbiter-s-eighty-first-shop","battleon"],["quibble-coinbiter-s-eighty-first-shop","game-menu"]]}},
+"diabolical-warden-s-katana":{"m":"2026-09-30T03:25:26","v":2,"n":"Diabolical Warden's Katana","c":"Items>Weapons>Swords","t":["0ac","ac","aegift","animated","colorcustom","defaultdmg","drop","freeplayer","katana","staffbirthday","sword","translation"],"i":["https://i.imgur.com/XvxYsS6.png","https://i.imgur.com/flK4zxu.png"],"d":["defaultdmg",27,33],"f":{"price":"N/A (Dropped by Eldritch Amalgamation)","rarity":"Awesome Rarity"},"r":{"loc":[["broken-woods"]]}},
+"stars-destroyed":{"m":"2026-09-27T19:39:37","v":2,"n":"Stars Destroyed","c":"Items>Misc. Items","t":["0ac","ac","drop","freeplayer","misc","questitem"],"f":{"price":"N/A (Dropped by all monsters in Starfield)"},"r":{"loc":[["starfield"]]}}
 }

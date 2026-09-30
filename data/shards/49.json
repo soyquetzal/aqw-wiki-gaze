@@ -1,9 +1,9 @@
 {
-"bloodsail-deadeye-rifle-cape":{"m":"2026-09-29T01:38:33","n":"Bloodsail Deadeye Rifle (Cape)","i":["https://i.imgur.com/4bzXuAp.png"],"t":["ac"]},
-"dragon-summoner":{"m":"2026-09-29T00:12:13"},
-"dry-ice-polearm-10":{"m":"2026-09-29T19:47:24","n":"Dry Ice Polearm +10","i":["https://i.imgur.com/APB7HKX.png"],"t":["seasonal","legend","repboost"],"d":["defaultdmg",27,33],"b":{"repboost":10}},
-"j6-s-energy-cc-cutlass":{"m":"2026-09-27T13:04:06","n":"J6's Energy CC Cutlass","i":["https://i.imgur.com/bSKc6YC.png"],"t":["ioda-excl"]},
-"j6-s-twin-energy-cutlasses":{"m":"2026-09-27T14:32:46","n":"J6's Twin Energy Cutlasses","i":["https://i.imgur.com/SYOAfnh.png"],"t":["ioda-excl"],"d":["defaultdmg",27,33]},
-"portable-grog-barrel":{"m":"2026-09-28T20:19:57","n":"Portable Grog Barrel","i":["https://i.imgur.com/RyV4f0M.png"],"t":["ioda-excl","ac","seasonal"]},
-"silver-bluster-of-the-alpha-piracy-infinity":{"m":"2026-09-27T14:34:00","n":"Silver Bluster of the Alpha Piracy (Infinity)","i":["https://i.imgur.com/RSZtT3I.png"],"t":["ioda-excl"],"d":["defaultdmg",27,33]}
+"bloodsail-deadeye-rifle-cape":{"m":"2026-09-29T01:38:33","v":2,"n":"Bloodsail Deadeye Rifle (Cape)","c":"Items>Capes & Back Items","t":["0ac","ac","aegift","back","backweapon","cutlass","drop","freeplayer","gun","tlapd"],"i":["https://i.imgur.com/4bzXuAp.png"],"f":{"price":"N/A (Dropped by Reaper of the Sea)","rarity":"Rare Rarity"},"r":{"loc":[["isthmia-castle"]]}},
+"dragon-summoner":{"m":"2026-09-29T00:12:13","v":2,"n":"Dragon Summoner","t":["disambiguation"]},
+"dry-ice-polearm-10":{"m":"2026-09-29T19:47:24","v":2,"n":"Dry Ice Polearm +10","c":"Items>Weapons>Polearms","t":["defaultdmg","drop","frostval","legend","polearm","repboost","seasonal"],"i":["https://i.imgur.com/APB7HKX.png"],"d":["defaultdmg",27,33],"b":{"repboost":10},"f":{"price":"N/A (Dropped by Ultra Bibliospectre)","rarity":"Seasonal Rarity"},"r":{"loc":[["frostspectre"]]}},
+"j6-s-energy-cc-cutlass":{"m":"2026-09-27T13:04:06","v":2,"n":"J6's Energy CC Cutlass","c":"Items>Weapons>Swords","t":["colorcustom","freeplayer","infinity","ioda-excl","shopitem","sword","tlapd"],"i":["https://i.imgur.com/bSKc6YC.png"],"f":{"price":"6,000 Gold","rarity":"Unknown Rarity"}},
+"j6-s-twin-energy-cutlasses":{"m":"2026-09-27T14:32:46","v":2,"n":"J6's Twin Energy Cutlasses","c":"Items>Weapons>Daggers","t":["dagger","defaultdmg","freeplayer","infinity","ioda-excl","j6","questreward","shopitem","tlapd"],"i":["https://i.imgur.com/SYOAfnh.png"],"d":["defaultdmg",27,33],"f":{"rarity":"Unknown Rarity"}},
+"portable-grog-barrel":{"m":"2026-09-28T20:19:57","v":2,"n":"Portable Grog Barrel","c":"Items>Capes & Back Items","t":["0ac","ac","back","backitem","drop","freeplayer","ioda-excl","seasonal","tlapd"],"i":["https://i.imgur.com/RyV4f0M.png"],"f":{"price":"N/A (Dropped by Isthmian Guard (1) (Version 1))","rarity":"Unknown Rarity"},"r":{"loc":[["deadly-seas"]]}},
+"silver-bluster-of-the-alpha-piracy-infinity":{"m":"2026-09-27T14:34:00","v":2,"n":"Silver Bluster of the Alpha Piracy (Infinity)","c":"Items>Weapons>HandGuns","t":["defaultdmg","freeplayer","gun","handgun","infinity","ioda-excl","questreward","shopitem","tlapd"],"i":["https://i.imgur.com/RSZtT3I.png"],"d":["defaultdmg",27,33],"f":{"rarity":"Legendary Rarity"}}
 }

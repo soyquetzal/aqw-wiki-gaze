@@ -1,4 +1,5 @@
 {
-"fiendfan-s-hair":{"m":"2026-09-28T11:11:24","n":"FiendFan's Hair","i":["https://imgur.com/7yOYDdZ.png"],"t":["ac","rare"]},
-"quibble-coinbiter-s-seventy-eighth-shop":{"m":"2026-09-26T20:22:26","n":"Quibble Coinbiter's Seventy-Eighth Shop","t":["rare"]}
+"diabolical-warden-s-katanas":{"m":"2026-09-30T03:26:23","v":2,"n":"Diabolical Warden's Katanas","c":"Items>Weapons>Daggers","t":["0ac","ac","aegift","animated","colorcustom","dagger","defaultdmg","drop","freeplayer","katana","staffbirthday","translation"],"i":["https://i.imgur.com/VXpALpT.png","https://i.imgur.com/dt67t8V.png"],"d":["defaultdmg",27,33],"f":{"price":"N/A (Dropped by Eldritch Amalgamation)","rarity":"Awesome Rarity"},"r":{"loc":[["broken-woods"]]}},
+"fiendfan-s-hair":{"m":"2026-09-28T11:11:24","v":2,"n":"FiendFan's Hair","c":"Items>Helmets & Hoods","t":["0ac","ac","freeplayer","hair","helm","hypefiend","mergereward","morph","rare","shopitem","staffbirthday"],"i":["https://imgur.com/7yOYDdZ.png"],"f":{"rarity":"Rare Rarity"},"r":{"loc":[["casparilla-s-merge","citadel"]]}},
+"quibble-coinbiter-s-seventy-eighth-shop":{"m":"2026-09-26T20:22:26","v":2,"n":"Quibble Coinbiter's Seventy-Eighth Shop","c":"World>Shops","t":["frostval","quibbleshop","rare","shop"],"r":{"loc":[["game-menu"],["quibble-coinbiter","battleon"]]}}
 }

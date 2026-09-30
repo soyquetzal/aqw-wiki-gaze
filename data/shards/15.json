@@ -1,5 +1,5 @@
 {
-"queen-clymette-isthmia":{"m":"2026-09-26T12:37:32","n":"Queen Clymette Isthmia","i":["https://i.imgur.com/hoQACe2.png"],"t":["seasonal"]},
-"royal-isthmian-axe":{"m":"2026-09-26T11:29:03","n":"Royal Isthmian Axe","i":["https://i.imgur.com/D4U6zdf.png"],"t":["ac","seasonal"],"d":["defaultdmg",27,33]},
-"royal-isthmian-gauntlet":{"m":"2026-09-26T11:29:48","n":"Royal Isthmian Gauntlet","i":["https://i.imgur.com/T5PEbTC.png"],"t":["ac","seasonal"],"d":["defaultdmg",27,33]}
+"queen-clymette-isthmia":{"m":"2026-09-26T12:37:32","v":2,"n":"Queen Clymette Isthmia","c":"World>NPCs","t":["crown","fish","freeplayer","hybrid","jewelry","npc","royalty","seasonal","tlapd"],"i":["https://i.imgur.com/hoQACe2.png"],"r":{"loc":[["isthmia-castle"]]}},
+"royal-isthmian-axe":{"m":"2026-09-26T11:29:03","v":2,"n":"Royal Isthmian Axe","c":"Items>Weapons>Axes","t":["0ac","ac","animated","axe","defaultdmg","freeplayer","mergeitem","mergereward","seasonal","shopitem","tlapd"],"i":["https://i.imgur.com/D4U6zdf.png"],"d":["defaultdmg",27,33],"f":{"rarity":"Seasonal Rarity"},"r":{"loc":[["red-betty-s-budget","deadly-seas"]]}},
+"royal-isthmian-gauntlet":{"m":"2026-09-26T11:29:48","v":2,"n":"Royal Isthmian Gauntlet","c":"Items>Weapons>Maces","t":["0ac","ac","animated","defaultdmg","drop","freeplayer","mace","mergeitem","seasonal","tlapd"],"i":["https://i.imgur.com/T5PEbTC.png"],"d":["defaultdmg",27,33],"f":{"price":"N/A (Dropped by Isthmian Leviathan)","rarity":"Seasonal Rarity"},"r":{"loc":[["deadly-seas"]]}}
 }

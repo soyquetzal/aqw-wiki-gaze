@@ -1,7 +1,7 @@
 {
 "blessed-naval-cutlass-ac":{"m":"2026-09-26T11:11:23","n":"Blessed Naval Cutlass (AC)","i":["https://i.imgur.com/KFYeSKe.png"],"t":["ac","seasonal"],"d":["defaultdmg",27,33]},
-"dual-celestial-cutlasses-ac":{"m":"2026-09-26T11:13:17","n":"Dual Celestial Cutlasses (AC)","i":["https://i.imgur.com/yzYfH2Y.png"],"t":["ac","seasonal"],"d":["defaultdmg",27,33]},
-"gold-voucher-25k":{"m":"2026-09-26T18:45:31"},
-"hypefiend-of-nulgath":{"m":"2026-09-28T10:23:05"},
-"spear-of-life-5":{"m":"2026-09-29T19:48:25","n":"Spear Of Life +5","i":["https://aqwwiki.wdfiles.com/local--files/spear-of-life-5/SpearofLife+5.png"],"t":["ac","rare","goldboost"],"d":["defaultdmg",27,33],"b":{"goldboost":5}}
+"dual-celestial-cutlasses-ac":{"m":"2026-09-26T11:13:17","v":2,"n":"Dual Celestial Cutlasses (AC)","c":"Items>Weapons>Daggers","t":["ac","cutlass","dagger","defaultdmg","jewelry","pirate","seasonal","shopitem","sword","tlapd"],"i":["https://i.imgur.com/yzYfH2Y.png"],"d":["defaultdmg",27,33],"f":{"price":"300 AC","rarity":"Seasonal Rarity"},"r":{"loc":[["garek-s-september-gear","battleon"]]}},
+"gold-voucher-25k":{"m":"2026-09-26T18:45:31","v":2,"n":"Gold Voucher 25k","c":"Items>Misc. Items","t":["akibanewyear","aprilfools","aqwbirthday","blackfriday","carnaval","daily","fathersday","freeplayer","friday13th","frostval","grenwog","harvestday","heroesheartday","maythe4th","mergeitem","mergereward","misc","mogloween","questitem","shopitem","staffbirthday","tlapd","war","wedding"]},
+"hypefiend-of-nulgath":{"m":"2026-09-28T10:23:05","v":2,"n":"HypeFiend of Nulgath","t":["disambiguation"]},
+"spear-of-life-5":{"m":"2026-09-29T19:48:25","v":2,"n":"Spear Of Life +5","c":"Items>Weapons>Polearms","t":["ac","defaultdmg","goldboost","lightsabre","polearm","rare","shopitem","staffbirthday"],"i":["https://aqwwiki.wdfiles.com/local--files/spear-of-life-5/SpearofLife+5.png"],"d":["defaultdmg",27,33],"b":{"goldboost":5},"f":{"price":"350 AC","rarity":"Rare Rarity"},"r":{"loc":[["aranx-birthday","game-menu"]]}}
 }

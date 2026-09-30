@@ -1,7 +1,8 @@
 {
-"ascended-harbinger-of-famine":{"m":"2026-09-26T18:17:19","n":"Ascended Harbinger of Famine","i":["https://i.imgur.com/qGnO5Pe.png","https://i.imgur.com/PZiRTUH.png"],"t":["ac"]},
-"awescended-cutlass-and-flintlock-ac":{"m":"2026-09-26T11:48:57","n":"Awescended Cutlass and Flintlock (AC)","i":["https://i.imgur.com/3iKcleb.png","https://i.imgur.com/RwPwm9g.png"],"t":["ac","seasonal"],"d":["defaultdmg",27,33]},
-"fiendfan-s-eyemask":{"m":"2026-09-28T11:11:41","n":"FiendFan's Eyemask","i":["https://imgur.com/M3BJUcw.png"],"t":["ac","rare"]},
-"hypefiend-s-locks-facemask":{"m":"2026-09-28T10:48:23"},
-"j6-s-boomstrick-back-drape":{"m":"2026-09-27T14:39:12","n":"J6's Boomstrick Back Drape","i":["https://i.imgur.com/hWHTvym.png"],"t":["ioda-excl"]}
+"ascended-harbinger-of-famine":{"m":"2026-09-26T18:17:19","v":2,"n":"Ascended Harbinger of Famine","c":"Items>Armors","t":["ac","armor","colorcustom","full-color","shopitem","staffbirthday"],"i":["https://i.imgur.com/qGnO5Pe.png","https://i.imgur.com/PZiRTUH.png"],"f":{"price":"1,000 AC","rarity":"Rare Rarity"},"r":{"loc":[["featured-gear-shop","game-menu"]]}},
+"awescended-cutlass-and-flintlock-ac":{"m":"2026-09-26T11:48:57","v":2,"n":"Awescended Cutlass and Flintlock (AC)","c":"Items>Weapons>Daggers","t":["2diffweapons","ac","animated","cutlass","dagger","defaultdmg","gun","inscription","jewelry","seasonal","shopitem","tlapd"],"i":["https://i.imgur.com/3iKcleb.png","https://i.imgur.com/RwPwm9g.png"],"d":["defaultdmg",27,33],"f":{"price":"450 AC","rarity":"Seasonal Rarity"},"r":{"loc":[["quibble-coinbiter-s-eighty-first-shop","battleon"],["quibble-coinbiter-s-eighty-first-shop","game-menu"]]}},
+"fiendfan-s-eyemask":{"m":"2026-09-28T11:11:41","v":2,"n":"FiendFan's Eyemask","c":"Items>Helmets & Hoods","t":["0ac","ac","freeplayer","hair","headband","helm","horns","hypefiend","mergereward","morph","rare","shopitem","staffbirthday"],"i":["https://imgur.com/M3BJUcw.png"],"f":{"rarity":"Rare Rarity"},"r":{"loc":[["casparilla-s-merge","citadel"]]}},
+"hypefiend-s-locks-facemask":{"m":"2026-09-28T10:48:23","v":2,"n":"HypeFiend's Locks + Facemask","t":["disambiguation"]},
+"j6-s-boomstrick-back-drape":{"m":"2026-09-27T14:39:12","v":2,"n":"J6's Boomstrick Back Drape","c":"Items>Capes & Back Items","t":["back","backweapon","cape","freeplayer","gun","infinity","ioda-excl","j6","questreward","shopitem","tlapd"],"i":["https://i.imgur.com/hWHTvym.png"],"f":{"rarity":"Unknown Rarity"}},
+"sf3017-shogun-npc":{"m":"2026-09-30T03:11:02","v":2,"n":"SF3017 Shogun (NPC)","c":"World>NPCs","t":["freeplayer","npc","questgiver","seasonal","staffbirthday","vendor","war"],"i":["https://i.imgur.com/B2f9iiF.png","https://i.imgur.com/ONuR9kT.png"],"r":{"loc":[["future-war"]]}}
 }

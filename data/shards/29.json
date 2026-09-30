@@ -1,4 +1,4 @@
 {
-"hypefiend-s-facemask":{"m":"2026-09-28T10:47:23"},
-"serket-attendant-veil-morph":{"m":"2026-09-26T16:58:27","n":"Serket Attendant Veil Morph","i":["https://i.imgur.com/AKgQUYm.png"],"t":["ioda-excl","ac"]}
+"hypefiend-s-facemask":{"m":"2026-09-28T10:47:23","v":2,"n":"HypeFiend's Facemask","t":["disambiguation"]},
+"serket-attendant-veil-morph":{"m":"2026-09-26T16:58:27","v":2,"n":"Serket Attendant Veil Morph","c":"Items>Helmets & Hoods","t":["0ac","ac","aegift","drop","freeplayer","hair","helm","ioda-excl","mask","morph"],"i":["https://i.imgur.com/AKgQUYm.png"],"f":{"price":"N/A (Dropped by Queen Meresankh)","rarity":"Unknown Rarity"},"r":{"loc":[["meresankh-chambers"]]}}
 }

@@ -1,5 +1,5 @@
 {
-"competitor-s-cane":{"m":"2026-09-29T10:23:27","n":"Competitor's Cane","i":["https://i.imgur.com/uClHveH.png","https://i.imgur.com/tsNyYOE.png"],"t":["ac","rare"],"d":["defaultdmg",27,33]},
-"skeleton-s-axe":{"m":"2026-09-29T05:25:57","n":"Skeleton's Axe","i":["https://i.imgur.com/agEdq6v.png"],"t":["ioda-excl"],"d":["defaultdmg",27,33]},
-"stormking-naval-cap-0-ac":{"m":"2026-09-26T11:36:57","n":"StormKing Naval Cap (0 AC)","i":["https://i.imgur.com/zPIw3oT.png"],"t":["ac"]}
+"competitor-s-cane":{"m":"2026-09-29T10:23:27","v":2,"n":"Competitor's Cane","c":"Items>Weapons>Staffs","t":["0ac","ac","aegift","animated","aqwbirthday","cane","defaultdmg","dragon","drop","freeplayer","jewelry","rare","staff"],"i":["https://i.imgur.com/uClHveH.png","https://i.imgur.com/tsNyYOE.png"],"d":["defaultdmg",27,33],"f":{"price":"N/A (Dropped by Twilly Pinata)","rarity":"Seasonal Rarity"},"r":{"loc":[["birthday"]]}},
+"skeleton-s-axe":{"m":"2026-09-29T05:25:57","v":2,"n":"Skeleton's Axe","c":"Items>Weapons>Axes","t":["axe","defaultdmg","drop","infinity","ioda-excl"],"i":["https://i.imgur.com/agEdq6v.png"],"d":["defaultdmg",27,33],"f":{"price":"N/A (Dropped by Undead Soldier)","rarity":"Awesome Rarity"}},
+"stormking-naval-cap-0-ac":{"m":"2026-09-26T11:36:57","v":2,"n":"StormKing Naval Cap (0 AC)","c":"Items>Helmets & Hoods","t":["0ac","ac","darkblood","hair","hat","helm","horns","jewelry","shopitem","tlapd"],"i":["https://i.imgur.com/zPIw3oT.png"],"f":{"price":"0 AC","rarity":"Rare Rarity"},"r":{"loc":[["deadly-seas-collection-shop","deadly-seas-collection-pet"]]}}
 }

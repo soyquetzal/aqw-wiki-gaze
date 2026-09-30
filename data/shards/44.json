@@ -1,6 +1,6 @@
 {
-"dual-chaorrupted-necrotic-swords":{"m":"2026-09-29T21:58:47","n":"Dual Chaorrupted Necrotic Swords","i":["https://i.imgur.com/qdHM10G.png"],"t":["ac"]},
-"fiendfan-s-facemask":{"m":"2026-09-28T11:11:31","n":"FiendFan's Facemask","i":["https://imgur.com/pQ8uk5K.png"],"t":["ac","rare"]},
-"hypefiend-s-hair":{"m":"2026-09-28T10:47:43"},
-"hypefiend-s-runes-ac":{"m":"2026-09-26T20:10:00","n":"HypeFiend's Runes (AC)","i":["https://imgur.com/RfdkUj3.png","https://imgur.com/n68iBkr.png"],"t":["ac","rare","goldboost"],"b":{"goldboost":10}}
+"dual-chaorrupted-necrotic-swords":{"m":"2026-09-29T21:58:47","v":2,"n":"Dual Chaorrupted Necrotic Swords","c":"Items>Weapons>Daggers","t":["0ac","ac","aegift","chaos","dagger","freeplayer","nsod","questreward"],"i":["https://i.imgur.com/qdHM10G.png"],"f":{"price":"N/A (Reward from the 'Chaorrupted Doom Blade' quest)","rarity":"Awesome Rarity"},"r":{"loc":[["crownsreach"]]}},
+"fiendfan-s-facemask":{"m":"2026-09-28T11:11:31","v":2,"n":"FiendFan's Facemask","c":"Items>Helmets & Hoods","t":["0ac","ac","freeplayer","hair","helm","hypefiend","mask","mergereward","morph","rare","shopitem","staffbirthday"],"i":["https://imgur.com/pQ8uk5K.png"],"f":{"rarity":"Rare Rarity"},"r":{"loc":[["casparilla-s-merge","citadel"]]}},
+"hypefiend-s-hair":{"m":"2026-09-28T10:47:43","v":2,"n":"HypeFiend's Hair","t":["disambiguation"]},
+"hypefiend-s-runes-ac":{"m":"2026-09-26T20:10:00","v":2,"n":"HypeFiend's Runes (AC)","c":"Items>Capes & Back Items","t":["ac","animated","back","backrune","goldboost","rare","shopitem","staffbirthday"],"i":["https://imgur.com/RfdkUj3.png","https://imgur.com/n68iBkr.png"],"b":{"goldboost":10},"f":{"price":"400 AC","rarity":"Rare Rarity"},"r":{"loc":[["nulgath-s-birthday","game-menu"]]}}
 }

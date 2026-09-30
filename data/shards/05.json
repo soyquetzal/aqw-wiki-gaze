@@ -1,4 +1,4 @@
 {
-"j6-pirate":{"m":"2026-09-29T22:31:02","n":"J6 - Pirate","i":["https://i.imgur.com/i15FE27.png","https://i.imgur.com/Ij1B2ak.png"],"t":["seasonal"]},
-"spear-of-awe-ac":{"m":"2026-09-29T13:27:58","n":"Spear of Awe! (AC)","i":["https://i.imgur.com/orrGjbS.png"],"t":["ac","rare"],"d":["otherdmg"]}
+"j6-pirate":{"m":"2026-09-29T22:31:02","v":2,"n":"J6 - Pirate","c":"Items>Armors","t":["armor","collar","freeplayer","j6","lv-locked","pirate","seasonal","shopitem","tlapd"],"i":["https://i.imgur.com/i15FE27.png","https://i.imgur.com/Ij1B2ak.png"],"f":{"price":"1,718 Gold","rarity":"Hidden Secret Rarity","level":6},"r":{"loc":[["tlapd-yarrr-ly-shop","lolosia"]]}},
+"spear-of-awe-ac":{"m":"2026-09-29T13:27:58","v":2,"n":"Spear of Awe! (AC)","c":"Items>Weapons>Polearms","t":["ac","aethemed","jewelry","mergeitem","otherdmg","polearm","rare","shopitem"],"i":["https://i.imgur.com/orrGjbS.png"],"d":["otherdmg"],"f":{"price":"200 AC","rarity":"Epic Rarity"},"r":{"loc":[["gear-of-awe","museum"]]}}
 }

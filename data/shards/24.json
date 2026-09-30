@@ -1,4 +1,4 @@
 {
-"deep-voyager-morph":{"m":"2026-09-26T17:08:00","n":"Deep Voyager Morph","i":["https://i.imgur.com/cEZ7RNZ.png"],"t":["ioda-excl","ac"]},
-"thunderbringer-pistols-ac":{"m":"2026-09-26T11:44:02","n":"ThunderBringer Pistols (AC)","i":["https://i.imgur.com/QS4Z7lN.png"],"t":["ac"],"d":["defaultdmg",27,33]}
+"deep-voyager-morph":{"m":"2026-09-26T17:08:00","v":2,"n":"Deep Voyager Morph","c":"Items>Helmets & Hoods","t":["0ac","ac","colorcustom","drop","freeplayer","glowingeyes","hair","hat","headband","helm","ioda-excl","jewelry","morph","scar","tlapd"],"i":["https://i.imgur.com/cEZ7RNZ.png"],"f":{"price":"N/A (Dropped by Isthmian Leviathan)","rarity":"Seasonal Rarity"},"r":{"loc":[["deadly-seas"]]}},
+"thunderbringer-pistols-ac":{"m":"2026-09-26T11:44:02","v":2,"n":"ThunderBringer Pistols (AC)","c":"Items>Weapons>Daggers","t":["0ac","ac","dagger","defaultdmg","gun","shopitem","tlapd"],"i":["https://i.imgur.com/QS4Z7lN.png"],"d":["defaultdmg",27,33],"f":{"price":"0 AC","rarity":"Rare Rarity"},"r":{"loc":[["deadly-seas-collection-shop","deadly-seas-collection-pet"]]}}
 }

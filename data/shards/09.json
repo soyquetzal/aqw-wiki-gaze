@@ -1,4 +1,4 @@
 {
-"hypefiend-s-bubble-gun":{"m":"2026-09-28T10:47:00"},
-"thunderforged-rapier-ac":{"m":"2026-09-26T11:48:25","n":"Thunderforged Rapier (AC)","i":["https://i.imgur.com/ZZiivkj.png"],"t":["ac"],"d":["defaultdmg",27,33]}
+"hypefiend-s-bubble-gun":{"m":"2026-09-28T10:47:00","v":2,"n":"HypeFiend's Bubble Gun","t":["disambiguation"]},
+"thunderforged-rapier-ac":{"m":"2026-09-26T11:48:25","v":2,"n":"Thunderforged Rapier (AC)","c":"Items>Weapons>Swords","t":["ac","defaultdmg","rapier","shopitem","sword","tlapd"],"i":["https://i.imgur.com/ZZiivkj.png"],"d":["defaultdmg",27,33],"f":{"price":"450 AC","rarity":"Rare Rarity"},"r":{"loc":[["quibble-coinbiter-s-eighty-first-shop","battleon"],["quibble-coinbiter-s-eighty-first-shop","game-menu"]]}}
 }

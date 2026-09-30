@@ -1,4 +1,4 @@
 {
-"chaorrupted-necrotic-sword":{"m":"2026-09-29T21:59:13","n":"Chaorrupted Necrotic Sword","i":["https://i.imgur.com/fSkGtVb.png"],"t":["ac"]},
-"sharktooth-ripper-ac":{"m":"2026-09-26T11:47:43","n":"Sharktooth Ripper (AC)","i":["https://i.imgur.com/pPpwFZP.png"],"t":["ac","seasonal"],"d":["defaultdmg",27,33]}
+"chaorrupted-necrotic-sword":{"m":"2026-09-29T21:59:13","v":2,"n":"Chaorrupted Necrotic Sword","c":"Items>Weapons>Swords","t":["0ac","ac","aegift","chaos","freeplayer","nsod","questreward","sword"],"i":["https://i.imgur.com/fSkGtVb.png"],"f":{"price":"N/A (Reward from the 'Chaorrupted Doom Blade' quest)","rarity":"Awesome Rarity"},"r":{"loc":[["crownsreach"]]}},
+"sharktooth-ripper-ac":{"m":"2026-09-26T11:47:43","v":2,"n":"Sharktooth Ripper (AC)","c":"Items>Weapons>Swords","t":["ac","colorcustom","defaultdmg","fish","seasonal","shopitem","sword","tlapd"],"i":["https://i.imgur.com/pPpwFZP.png"],"d":["defaultdmg",27,33],"f":{"price":"350 AC","rarity":"Seasonal Rarity"},"r":{"loc":[["quibble-coinbiter-s-eighty-first-shop","battleon"],["quibble-coinbiter-s-eighty-first-shop","game-menu"]]}}
 }

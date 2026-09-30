@@ -1,5 +1,5 @@
 {
-"sea-fury-staff-25":{"m":"2026-09-29T19:49:49","n":"Sea Fury Staff +25","i":["https://i.imgur.com/2sOzgSd.png"],"t":["ac","xdmg2undead"],"d":["defaultdmg",27,33],"b":{"xdmg2undead":25}},
-"september-seasonal-shop":{"m":"2026-09-26T11:21:16","n":"September Seasonal Shop","t":["seasonal","specialoffer"]},
-"silver-rapier-of-the-alpha-pirate-infinity":{"m":"2026-09-27T14:19:40","n":"Silver Rapier of the Alpha Pirate (Infinity)","i":["https://i.imgur.com/tsDrNyk.png"],"t":["ioda-excl"],"d":["defaultdmg",27,33]}
+"sea-fury-staff-25":{"m":"2026-09-29T19:49:49","v":2,"n":"Sea Fury Staff +25","c":"Items>Weapons>Staffs","t":["ac","defaultdmg","fish","plant","shopitem","staff","xdmg2undead"],"i":["https://i.imgur.com/2sOzgSd.png"],"d":["defaultdmg",27,33],"b":{"xdmg2undead":25},"f":{"price":"300 AC","rarity":"Awesome Rarity"},"r":{"loc":[["feverfew-merge","feverfew"]]}},
+"september-seasonal-shop":{"m":"2026-09-26T11:21:16","v":2,"n":"September Seasonal Shop","c":"World>Shops","t":["seasonal","shop","specialoffer"],"r":{"loc":[["bolbadge:560","book-of-lore"]]}},
+"silver-rapier-of-the-alpha-pirate-infinity":{"m":"2026-09-27T14:19:40","v":2,"n":"Silver Rapier of the Alpha Pirate (Infinity)","c":"Items>Weapons>Swords","t":["defaultdmg","freeplayer","infinity","ioda-excl","questreward","rapier","shopitem","sword","tlapd"],"i":["https://i.imgur.com/tsDrNyk.png"],"d":["defaultdmg",27,33],"f":{"rarity":"Legendary Rarity"}}
 }

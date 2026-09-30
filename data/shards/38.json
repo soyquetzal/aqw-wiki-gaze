@@ -1,5 +1,5 @@
 {
-"aqua-rage-trident-25":{"m":"2026-09-29T19:49:59","n":"Aqua Rage Trident +25","i":["https://i.imgur.com/5p2CSRE.png"],"t":["ac","xdmg2undead"],"d":["defaultdmg",27,33],"b":{"xdmg2undead":25}},
-"fiendfan-of-nulgath":{"m":"2026-09-28T11:10:27","n":"FiendFan of Nulgath","i":["https://i.imgur.com/37lNnWv.png","https://i.imgur.com/y26gN55.png"],"t":["ac","rare"]},
-"shadowflame-kyron":{"m":"2026-09-29T23:38:31","n":"Shadowflame Kyron","i":["https://i.imgur.com/Fx9sYJ8.png"],"t":["elementalkind"]}
+"aqua-rage-trident-25":{"m":"2026-09-29T19:49:59","v":2,"n":"Aqua Rage Trident +25","c":"Items>Weapons>Polearms","t":["ac","defaultdmg","polearm","shopitem","xdmg2undead"],"i":["https://i.imgur.com/5p2CSRE.png"],"d":["defaultdmg",27,33],"b":{"xdmg2undead":25},"f":{"price":"300 AC","rarity":"Awesome Rarity"},"r":{"loc":[["feverfew-merge","feverfew"]]}},
+"fiendfan-of-nulgath":{"m":"2026-09-28T11:10:27","v":2,"n":"FiendFan of Nulgath","c":"Items>Armors","t":["0ac","ac","armor","freeplayer","mergereward","parody","rare","shopitem","staffbirthday"],"i":["https://i.imgur.com/37lNnWv.png","https://i.imgur.com/y26gN55.png"],"f":{"rarity":"Rare Rarity"},"r":{"loc":[["casparilla-s-merge","citadel"]]}},
+"shadowflame-kyron":{"m":"2026-09-29T23:38:31","v":2,"n":"Shadowflame Kyron","c":"World>Monsters","t":["5star","_lv75","boss","demon","elementalkind","equine","evileyes","freeplayer","hybrid","immune","monster","tailed"],"i":["https://i.imgur.com/Fx9sYJ8.png"],"f":{"level":75,"difficulty":"5 stars","hp":"600,000"},"r":{"loc":[["fire-invasion"]]}}
 }

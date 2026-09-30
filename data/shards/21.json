@@ -1,3 +1,3 @@
 {
-"blessed-celestial-cutlasses-ac":{"m":"2026-09-26T11:48:29","n":"Blessed Celestial Cutlasses (AC)","i":["https://i.imgur.com/OtT6YZ7.png"],"t":["ac"],"d":["defaultdmg",27,33]}
+"blessed-celestial-cutlasses-ac":{"m":"2026-09-26T11:48:29","v":2,"n":"Blessed Celestial Cutlasses (AC)","c":"Items>Weapons>Daggers","t":["ac","cutlass","dagger","defaultdmg","shopitem","tlapd"],"i":["https://i.imgur.com/OtT6YZ7.png"],"d":["defaultdmg",27,33],"f":{"price":"450 AC","rarity":"Rare Rarity"},"r":{"loc":[["quibble-coinbiter-s-eighty-first-shop","battleon"],["quibble-coinbiter-s-eighty-first-shop","game-menu"]]}}
 }

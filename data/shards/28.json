@@ -1,6 +1,6 @@
 {
-"artist-showcase":{"m":"2026-09-29T22:09:39","n":"Artist Showcase","t":["rare"]},
-"bloodsail-sharpshooter-locks":{"m":"2026-09-28T20:14:35","n":"Bloodsail Sharpshooter Locks","i":["https://i.imgur.com/LxUKrze.png"],"t":["ac"]},
-"j6-pirate-helm":{"m":"2026-09-27T14:42:19","n":"J6 Pirate Helm","i":["https://i.imgur.com/j6GE0d3.png"],"t":["ioda-excl"]},
-"lucky-hammer":{"m":"2026-09-28T12:03:23","n":"Lucky Hammer","i":["https://i.imgur.com/1U8dFLb.png"],"t":["seasonal"],"d":["defaultdmg",27,33]}
+"artist-showcase":{"m":"2026-09-29T22:09:39","v":2,"n":"Artist Showcase","c":"World>Shops","t":["aqwbirthday","battlecon","freeplayer","limited-time","rare","shop"],"r":{"loc":[["game-menu"]]}},
+"bloodsail-sharpshooter-locks":{"m":"2026-09-28T20:14:35","v":2,"n":"Bloodsail Sharpshooter Locks","c":"Items>Helmets & Hoods","t":["0ac","ac","aegift","drop","freeplayer","hair","headband","helm","jewelry","tlapd"],"i":["https://i.imgur.com/LxUKrze.png"],"f":{"price":"N/A (Dropped by Reaper of the Sea)","rarity":"Rare Rarity"},"r":{"loc":[["isthmia-castle"]]}},
+"j6-pirate-helm":{"m":"2026-09-27T14:42:19","v":2,"n":"J6 Pirate Helm","c":"Items>Helmets & Hoods","t":["freeplayer","helm","helmet","infinity","ioda-excl","j6","questreward","shopitem","tlapd"],"i":["https://i.imgur.com/j6GE0d3.png"],"f":{"rarity":"Unknown Rarity"}},
+"lucky-hammer":{"m":"2026-09-28T12:03:23","v":2,"n":"Lucky Hammer","c":"Items>Weapons>Maces","t":["defaultdmg","freeplayer","goodluckday","mace","mergereward","questreward","seasonal","shopitem"],"i":["https://i.imgur.com/1U8dFLb.png"],"d":["defaultdmg",27,33]}
 }

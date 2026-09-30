@@ -1,4 +1,4 @@
 {
-"new-releases":{"m":"2026-09-29T23:42:03","n":"New Releases","i":["https://www.aq.com/cms/images/DN-TLAPD2026-Wk2.jpg","https://www.aq.com/cms/images/DN-TLAPD2026-Wk1.jpg"]},
-"serket-attendant-locks":{"m":"2026-09-26T16:57:45","n":"Serket Attendant Locks","i":["https://i.imgur.com/dojVp7F.png"],"t":["ioda-excl","ac"]}
+"new-releases":{"m":"2026-09-29T23:42:03","v":2,"n":"New Releases","c":"Other Info>Chronicle of Releases","i":["https://www.aq.com/cms/images/DN-TLAPD2026-Wk2.jpg","https://www.aq.com/cms/images/DN-TLAPD2026-Wk1.jpg"]},
+"serket-attendant-locks":{"m":"2026-09-26T16:57:45","v":2,"n":"Serket Attendant Locks","c":"Items>Helmets & Hoods","t":["0ac","ac","aegift","drop","freeplayer","hair","helm","ioda-excl"],"i":["https://i.imgur.com/dojVp7F.png"],"f":{"price":"N/A (Dropped by Queen Meresankh)","rarity":"Unknown Rarity"},"r":{"loc":[["meresankh-chambers"]]}}
 }

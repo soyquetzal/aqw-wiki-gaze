@@ -1,4 +1,4 @@
 {
-"royal-isthmian-mace":{"m":"2026-09-26T11:29:27","n":"Royal Isthmian Mace","i":["https://i.imgur.com/xU3TrRl.png"],"t":["ac","seasonal"],"d":["defaultdmg",27,33]},
-"royal-isthmian-wand":{"m":"2026-09-26T12:59:06","n":"Royal Isthmian Wand","i":["https://i.imgur.com/8D1HvzA.png"],"t":["ac","seasonal"],"d":["defaultdmg",27,33]}
+"royal-isthmian-mace":{"m":"2026-09-26T11:29:27","v":2,"n":"Royal Isthmian Mace","c":"Items>Weapons>Maces","t":["0ac","ac","animated","defaultdmg","freeplayer","mace","mergeitem","mergereward","seasonal","shopitem","tlapd"],"i":["https://i.imgur.com/xU3TrRl.png"],"d":["defaultdmg",27,33],"f":{"rarity":"Seasonal Rarity"},"r":{"loc":[["red-betty-s-budget","deadly-seas"]]}},
+"royal-isthmian-wand":{"m":"2026-09-26T12:59:06","v":2,"n":"Royal Isthmian Wand","c":"Items>Weapons>Wands","t":["0ac","ac","animated","defaultdmg","drop","fish","freeplayer","mergeitem","seasonal","tlapd","wand"],"i":["https://i.imgur.com/8D1HvzA.png"],"d":["defaultdmg",27,33],"f":{"rarity":"Seasonal Rarity"},"r":{"loc":[["deadly-seas"]]}}
 }

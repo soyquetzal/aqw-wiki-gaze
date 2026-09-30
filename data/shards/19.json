@@ -1,5 +1,5 @@
 {
-"doomed-naval-cap-0-ac":{"m":"2026-09-26T11:35:43","n":"Doomed Naval Cap (0 AC)","i":["https://i.imgur.com/gtDySOx.png"],"t":["ac"]},
-"dual-golden-pirate-rapiers-infinity":{"m":"2026-09-27T14:22:29","n":"Dual Golden Pirate Rapiers (Infinity)","i":["https://i.imgur.com/5ezhCKt.png","https://i.imgur.com/fE1SCHJ.png"],"t":["ioda-excl"],"d":["defaultdmg",27,33]},
-"isthmian-resident":{"m":"2026-09-26T18:45:45","n":"Isthmian Resident","i":["https://i.imgur.com/Fd0be7l.png"],"t":["seasonal"]}
+"doomed-naval-cap-0-ac":{"m":"2026-09-26T11:35:43","v":2,"n":"Doomed Naval Cap (0 AC)","c":"Items>Helmets & Hoods","t":["0ac","ac","chain","hair","hat","helm","shopitem","tlapd"],"i":["https://i.imgur.com/gtDySOx.png"],"f":{"price":"0 AC","rarity":"Rare Rarity"},"r":{"loc":[["deadly-seas-collection-shop","deadly-seas-collection-pet"]]}},
+"dual-golden-pirate-rapiers-infinity":{"m":"2026-09-27T14:22:29","v":2,"n":"Dual Golden Pirate Rapiers (Infinity)","c":"Items>Weapons>Daggers","t":["dagger","defaultdmg","freeplayer","infinity","ioda-excl","questreward","rapier","shopitem","tlapd"],"i":["https://i.imgur.com/5ezhCKt.png","https://i.imgur.com/fE1SCHJ.png"],"d":["defaultdmg",27,33],"f":{"rarity":"Legendary Rarity"}},
+"isthmian-resident":{"m":"2026-09-26T18:45:45","v":2,"n":"Isthmian Resident","c":"World>NPCs","t":["fish","freeplayer","hybrid","npc","seasonal","tlapd"],"i":["https://i.imgur.com/Fd0be7l.png"],"r":{"loc":[["deadly-seas"]]}}
 }

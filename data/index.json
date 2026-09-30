@@ -1,7 +1,7 @@
 {
-  "version": 1,
+  "format": 2,
   "shards": 64,
-  "pages": 200,
+  "pages": 204,
   "pending": 99249,
-  "generated": "2026-09-30T03:11:25.614Z"
+  "generated": "2026-09-30T03:57:04.895Z"
 }
