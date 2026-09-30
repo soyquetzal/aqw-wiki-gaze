@@ -10,7 +10,7 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { appendFileSync } from "node:fs";
 import { parseHTML } from "linkedom";
-import { parsePage } from "./parse.mjs";
+import { FORMAT, parsePage } from "./parse.mjs";
 import { SHARD_COUNT, shardName, shardOf } from "./shard.mjs";
 
 // --- Options ----------------------------------------------------------------
@@ -143,25 +143,67 @@ async function saveShards() {
   return changed;
 }
 
-// Compact entry: m = last modification, n = name, i = images, t = tags,
-// d = [damage tag, min, max] (range omitted if unknown), b = bonus amounts.
-// A page with nothing to show is stored as { m } so it is not fetched again.
+// Compact entry (format 2):
+//   m last modification   v format      n name         c category path
+//   t all tags            i images      d [damage tag, min, max]
+//   b bonus amounts       f fields      r relations (slugs, grouped per list item)
+// A page that could not be read is stored as { m, v } so it is not fetched
+// again until it changes.
 function toEntry(modified, data) {
-  const entry = { m: modified };
-  if (!data.images.length && !data.tags.length && !data.damage) return entry;
+  const entry = { m: modified, v: FORMAT };
+  if (!data.name) return entry;
 
-  if (data.name) entry.n = data.name;
+  entry.n = data.name;
+  if (data.category.length) entry.c = data.category.join(">");
+  if (data.tags.length) entry.t = data.tags;
   if (data.images.length) {
     entry.i = data.images.map(url =>
       url.startsWith(IMAGE_PREFIX) ? url.slice(IMAGE_PREFIX.length) : url
     );
   }
-  if (data.tags.length) entry.t = data.tags;
   if (data.damage) {
     entry.d = [data.damage.tag, ...(data.damage.exactRange || [])];
   }
   if (Object.keys(data.bonuses).length) entry.b = data.bonuses;
+  if (Object.keys(data.fields).length) entry.f = data.fields;
+  if (Object.keys(data.relations).length) entry.r = data.relations;
   return entry;
+}
+
+// A stored page is current when it was saved from the same edit of the page
+// and with the same data format.
+const isCurrent = (entry, modified) =>
+  Boolean(entry) && entry.m === modified && entry.v === FORMAT;
+
+// Lightweight list for a search box: [slug, name, category index].
+async function saveSearchIndex() {
+  const rows = [];
+  for (const shard of shards) {
+    for (const [slug, entry] of shard.entries) {
+      if (entry.n) rows.push([slug, entry.n, entry.c || ""]);
+    }
+  }
+  rows.sort((a, b) => (a[0] < b[0] ? -1 : a[0] > b[0] ? 1 : 0));
+
+  const categories = [];
+  const categoryIndex = new Map();
+  const lines = rows.map(([slug, name, category]) => {
+    if (!categoryIndex.has(category)) {
+      categoryIndex.set(category, categories.length);
+      categories.push(category);
+    }
+    return JSON.stringify([slug, name, categoryIndex.get(category)]);
+  });
+
+  const text =
+    `{"categories":${JSON.stringify(categories)},\n"pages":[\n` +
+    `${lines.join(",\n")}\n]}\n`;
+
+  const path = `${DATA_DIR}/search.json`;
+  if (text === (await readOptional(path))) return false;
+
+  await writeFile(path, text);
+  return true;
 }
 
 // --- Sitemap ----------------------------------------------------------------
@@ -231,7 +273,7 @@ async function crawlPage(slug, modified) {
 
   const isHtml = (response.headers.get("content-type") || "").includes("text/html");
   if (!response.ok || !isHtml) {
-    setEntry(slug, { m: modified });
+    setEntry(slug, { m: modified, v: FORMAT });
     stats.gone++;
     return;
   }
@@ -299,10 +341,9 @@ async function main() {
 
   const todo = [];
   for (const [slug, modified] of sitemap) {
-    const current = getEntry(slug);
-    if (!current || current.m !== modified) todo.push([slug, modified]);
+    if (!isCurrent(getEntry(slug), modified)) todo.push([slug, modified]);
   }
-  log(`${todo.length} pages are new or changed`);
+  log(`${todo.length} pages are new, changed or in an older format`);
 
   await runQueue(todo);
 
@@ -319,12 +360,12 @@ async function main() {
 
   let pending = 0;
   for (const [slug, modified] of sitemap) {
-    const current = getEntry(slug);
-    if (!current || current.m !== modified) pending++;
+    if (!isCurrent(getEntry(slug), modified)) pending++;
   }
 
   const total = shards.reduce((sum, s) => sum + s.entries.size, 0);
   let changed = await saveShards();
+  if (await saveSearchIndex()) changed = true;
 
   // The index is only rewritten when something in it actually changed, so a
   // run with no news does not create a commit.
@@ -332,7 +373,7 @@ async function main() {
   const previous = JSON.parse((await readOptional(indexPath)) || "{}");
   if (changed || previous.pending !== pending || previous.pages !== total) {
     const index = {
-      version: 1,
+      format: FORMAT,
       shards: SHARD_COUNT,
       pages: total,
       pending,
@@ -344,7 +385,7 @@ async function main() {
   }
 
   const summary =
-    `fetched ${stats.fetched} (${stats.stored} with data, ${stats.empty} without, ` +
+    `fetched ${stats.fetched} (${stats.stored} read, ${stats.empty} without a name, ` +
     `${stats.gone} missing), errors ${stats.errors}, removed ${removed}, ` +
     `total stored ${total}, pending ${pending}` +
     (stopReason ? `, stopped early: ${stopReason}` : "");
