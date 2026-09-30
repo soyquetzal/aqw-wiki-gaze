@@ -1,0 +1,10 @@
+{
+"dragon-summoner-armor":{"m":"2026-09-29T00:12:13","n":"Dragon Summoner (Armor)","i":["https://i.imgur.com/dzfF2Pe.png","https://aqwwiki.wdfiles.com/local--files/dragon-summoner-armor/DSmOld.png"]},
+"duel-silver-rapiers-of-alpha-piracy-infinity":{"m":"2026-09-27T14:23:10","n":"Duel Silver Rapiers of Alpha Piracy (Infinity)","i":["https://i.imgur.com/vqivR1q.png"],"t":["ioda-excl"],"d":["defaultdmg",27,33]},
+"evolved-legion-vampire-scythe-5":{"m":"2026-09-29T19:47:06","n":"Evolved Legion Vampire Scythe +5","i":["https://aqwwiki.wdfiles.com/local--files/evolved-legion-vampire-scythe-5/EvolvedLegionVampireScythe.png"],"t":["ac","rare","xpboost"],"d":["otherdmg"],"b":{"xpboost":5}},
+"fiendfan-s-locks":{"m":"2026-09-28T11:11:14","n":"FiendFan's Locks","i":["https://imgur.com/ny77xJO.png","https://imgur.com/LO0uYjU.png"],"t":["ac","rare"]},
+"golden-pirate-rapier-infinity":{"m":"2026-09-27T14:21:15","n":"Golden Pirate Rapier (Infinity)","i":["https://i.imgur.com/N0CaOnk.png","https://i.imgur.com/VlaP0KH.png"],"t":["ioda-excl"],"d":["defaultdmg",27,33]},
+"isthmian-eel":{"m":"2026-09-26T11:17:09","n":"Isthmian Eel","i":["https://i.imgur.com/Sjyp7yu.png"],"t":["seasonal","elementalkind"]},
+"quibble-coinbiter-s-seventy-ninth-shop":{"m":"2026-09-26T20:22:38","n":"Quibble Coinbiter's Seventy-Ninth Shop","t":["rare"]},
+"thok":{"m":"2026-09-26T12:50:09","n":"Thok","i":["https://i.imgur.com/PJ59SoM.png","https://i.imgur.com/LOE3rFT.png"]}
+}

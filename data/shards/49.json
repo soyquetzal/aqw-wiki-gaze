@@ -1,0 +1,9 @@
+{
+"bloodsail-deadeye-rifle-cape":{"m":"2026-09-29T01:38:33","n":"Bloodsail Deadeye Rifle (Cape)","i":["https://i.imgur.com/4bzXuAp.png"],"t":["ac"]},
+"dragon-summoner":{"m":"2026-09-29T00:12:13"},
+"dry-ice-polearm-10":{"m":"2026-09-29T19:47:24","n":"Dry Ice Polearm +10","i":["https://i.imgur.com/APB7HKX.png"],"t":["seasonal","legend","repboost"],"d":["defaultdmg",27,33],"b":{"repboost":10}},
+"j6-s-energy-cc-cutlass":{"m":"2026-09-27T13:04:06","n":"J6's Energy CC Cutlass","i":["https://i.imgur.com/bSKc6YC.png"],"t":["ioda-excl"]},
+"j6-s-twin-energy-cutlasses":{"m":"2026-09-27T14:32:46","n":"J6's Twin Energy Cutlasses","i":["https://i.imgur.com/SYOAfnh.png"],"t":["ioda-excl"],"d":["defaultdmg",27,33]},
+"portable-grog-barrel":{"m":"2026-09-28T20:19:57","n":"Portable Grog Barrel","i":["https://i.imgur.com/RyV4f0M.png"],"t":["ioda-excl","ac","seasonal"]},
+"silver-bluster-of-the-alpha-piracy-infinity":{"m":"2026-09-27T14:34:00","n":"Silver Bluster of the Alpha Piracy (Infinity)","i":["https://i.imgur.com/RSZtT3I.png"],"t":["ioda-excl"],"d":["defaultdmg",27,33]}
+}

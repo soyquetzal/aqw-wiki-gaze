@@ -1,0 +1,8 @@
+{
+"dual-blessed-cutlasses-ac":{"m":"2026-09-26T11:12:49","n":"Dual Blessed Cutlasses (AC)","i":["https://i.imgur.com/8lL6gXE.png"],"t":["ac","seasonal"],"d":["defaultdmg",27,33]},
+"hypefiend-s-runes-0-ac":{"m":"2026-09-26T20:09:32","n":"HypeFiend's Runes (0 AC)","i":["https://imgur.com/RfdkUj3.png","https://imgur.com/n68iBkr.png"],"t":["ac","pseudo-rare","goldboost"],"b":{"goldboost":10}},
+"nulgath-s-birthday-event":{"m":"2026-09-28T10:37:47"},
+"power-of-love-3":{"m":"2026-09-29T19:49:01","n":"Power of Love +3","i":["https://aqwwiki.wdfiles.com/local--files/power-of-love-3/PowerofLove.png"],"t":["ac","rare","goldboost"],"d":["defaultdmg",27,33],"b":{"goldboost":3}},
+"thunderbringer-rapier-non-ac":{"m":"2026-09-26T11:48:07","n":"ThunderBringer Rapier (Non-AC)","i":["https://i.imgur.com/6x1Lunw.png"],"d":["defaultdmg",27,33]},
+"thunderforged-cutlass-ac":{"m":"2026-09-26T11:48:16","n":"Thunderforged Cutlass (AC)","i":["https://i.imgur.com/sdq7cuc.png"],"t":["ac"],"d":["defaultdmg",27,33]}
+}

@@ -1,0 +1,5 @@
+{
+"cursecaster-cutlasses-legend":{"m":"2026-09-26T11:43:53","n":"CurseCaster Cutlasses (Legend)","i":["https://i.imgur.com/1tsQSJJ.png"],"t":["legend"],"d":["defaultdmg",27,33]},
+"hypefiend-of-nulgath-0-ac":{"m":"2026-09-28T10:23:41","n":"HypeFiend of Nulgath (0 AC)","i":["https://i.imgur.com/37lNnWv.png","https://i.imgur.com/y26gN55.png"],"t":["ac","pseudo-rare","goldboost"],"b":{"goldboost":15}},
+"muddy-chainsaw-5":{"m":"2026-09-29T19:50:17","n":"Muddy Chainsaw +5","i":["https://aqwwiki.wdfiles.com/local--files/muddy-chainsaw-5/MuddyChainsaw.png","https://aqwwiki.wdfiles.com/local--files/muddy-chainsaw-5/MuddyChainsawA.png"],"t":["ac","rare","xdmg2undead"],"d":["otherdmg",23,37],"b":{"xdmg2undead":5}}
+}

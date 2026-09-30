@@ -1,0 +1,7 @@
+{
+"bloodsail-sharpshooter":{"m":"2026-09-28T20:15:38","n":"Bloodsail Sharpshooter","i":["https://i.imgur.com/nIXcyQv.png","https://i.imgur.com/17vyzzH.png"],"t":["ac"]},
+"bloodsail-sharpshooter-essentials":{"m":"2026-09-28T20:18:35","n":"Bloodsail Sharpshooter Essentials","i":["https://i.imgur.com/VczyFef.png"],"t":["ac"]},
+"dark-ferryman-s-scythe-5":{"m":"2026-09-29T19:50:47","n":"Dark Ferryman's Scythe +5","i":["https://aqwwiki.wdfiles.com/local--files/dark-ferryman-s-scythe-5/DarkFerryman'sScythe5.png"],"t":["ac","rare","xdmg2undead"],"d":["defaultdmg",27,33],"b":{"xdmg2undead":5}},
+"garek-s-september-gear":{"m":"2026-09-26T11:14:00","n":"Garek's September Gear","t":["seasonal"]},
+"imperial-isthmian-scythe":{"m":"2026-09-28T23:03:05","n":"Imperial Isthmian Scythe","i":["https://i.imgur.com/ND6I15e.png"],"t":["ac","seasonal"],"d":["defaultdmg",27,33]}
+}

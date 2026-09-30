@@ -1,0 +1,6 @@
+{
+"cursecaster-cutlasses-ac":{"m":"2026-09-26T11:43:47","n":"CurseCaster Cutlasses (AC)","i":["https://i.imgur.com/1tsQSJJ.png"],"t":["ac"],"d":["defaultdmg",27,33]},
+"doomed-naval-cap-ac":{"m":"2026-09-26T11:35:48","n":"Doomed Naval Cap (AC)","i":["https://i.imgur.com/gtDySOx.png"],"t":["ac"]},
+"legion-dragon-blade-5":{"m":"2026-09-29T19:47:42","n":"Legion Dragon Blade +5","i":["https://i.imgur.com/iG3dNJA.png"],"t":["ac","rare","repboost","xdmg2dragon"],"d":["otherdmg",23,37],"b":{"repboost":5,"xdmg2dragon":15}},
+"thunderbringer-cutlass-0-ac":{"m":"2026-09-26T11:47:48","n":"ThunderBringer Cutlass (0 AC)","i":["https://i.imgur.com/EsasdXc.png"],"t":["ac"],"d":["defaultdmg",27,33]}
+}

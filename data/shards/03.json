@@ -1,0 +1,7 @@
+{
+"garek-s-seasonal-gear-shop":{"m":"2026-09-26T11:40:16","n":"Garek's Seasonal Gear Shop","t":["rare"]},
+"greater-bloodbeacon-polearm-5":{"m":"2026-09-29T19:48:48","n":"Greater Bloodbeacon Polearm +5","i":["https://aqwwiki.wdfiles.com/local--files/greater-bloodbeacon-polearm-5/GreaterBloodbeaconPolearm.png"],"t":["rare","legend","goldboost"],"d":["defaultdmg",27,33],"b":{"goldboost":5}},
+"imperial-isthmian-axe":{"m":"2026-09-26T11:25:45","n":"Imperial Isthmian Axe","i":["https://i.imgur.com/u5XkQQi.png"],"t":["ac","seasonal"],"d":["defaultdmg",27,33]},
+"quibble-coinbiter-s-seventy-seventh-shop":{"m":"2026-09-26T20:21:35","n":"Quibble Coinbiter's Seventy-Seventh Shop","t":["rare"]},
+"rare-platinum-dragon-blade-3":{"m":"2026-09-29T19:47:52","n":"Rare Platinum Dragon Blade +3","i":["https://aqwwiki.wdfiles.com/local--files/rare-platinum-dragon-blade-3/PDB.png"],"t":["ac","rare","repboost"],"d":["otherdmg",24,36],"b":{"repboost":3}}
+}

@@ -1,0 +1,7 @@
+{
+"captain-rhubarb-durance":{"m":"2026-09-26T12:33:36","n":"Captain Rhubarb & Durance","i":["https://i.imgur.com/cyErC8O.png"],"t":["seasonal"]},
+"doomed-captain-s-cutlass-ac":{"m":"2026-09-26T11:47:26","n":"Doomed Captain's Cutlass (AC)","i":["https://i.imgur.com/qO3Vh5P.png","https://i.imgur.com/BexiOXp.png"],"t":["ac"],"d":["defaultdmg",27,33]},
+"september-2019":{"m":"2026-09-26T11:16:51"},
+"shadow-warrior-blade-5":{"m":"2026-09-29T19:50:08","n":"Shadow Warrior Blade +5","i":["https://i.imgur.com/BQ11HsN.png"],"t":["ac","rare","xdmg2undead"],"d":["defaultdmg",27,33],"b":{"xdmg2undead":5}},
+"stormking-naval-hat-ac":{"m":"2026-09-26T11:37:17","n":"StormKing Naval Hat (AC)","i":["https://i.imgur.com/IW0UQP3.png"],"t":["ac"]}
+}

@@ -1,0 +1,7 @@
+{
+"blessed-naval-cutlass-ac":{"m":"2026-09-26T11:11:23","n":"Blessed Naval Cutlass (AC)","i":["https://i.imgur.com/KFYeSKe.png"],"t":["ac","seasonal"],"d":["defaultdmg",27,33]},
+"dual-celestial-cutlasses-ac":{"m":"2026-09-26T11:13:17","n":"Dual Celestial Cutlasses (AC)","i":["https://i.imgur.com/yzYfH2Y.png"],"t":["ac","seasonal"],"d":["defaultdmg",27,33]},
+"gold-voucher-25k":{"m":"2026-09-26T18:45:31"},
+"hypefiend-of-nulgath":{"m":"2026-09-28T10:23:05"},
+"spear-of-life-5":{"m":"2026-09-29T19:48:25","n":"Spear Of Life +5","i":["https://aqwwiki.wdfiles.com/local--files/spear-of-life-5/SpearofLife+5.png"],"t":["ac","rare","goldboost"],"d":["defaultdmg",27,33],"b":{"goldboost":5}}
+}

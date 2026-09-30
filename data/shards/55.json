@@ -1,0 +1,8 @@
+{
+"bloodsail-sharpshooter-bandana":{"m":"2026-09-28T20:14:29","n":"Bloodsail Sharpshooter Bandana","i":["https://i.imgur.com/NCQbK8b.png"],"t":["ac"]},
+"fiendfan-s-locks-facemask":{"m":"2026-09-28T11:10:52","n":"FiendFan's Locks + Facemask","i":["https://imgur.com/agcx9kW.png"],"t":["ac","rare"]},
+"hypefiend-s-bubble-gun-0-ac":{"m":"2026-09-28T10:52:37","n":"HypeFiend's Bubble Gun (0 AC)","i":["https://i.imgur.com/vT5Upus.png","https://i.imgur.com/JSBL6Hy.png"],"t":["ac","pseudo-rare","goldboost"],"d":["defaultdmg",27,33],"b":{"goldboost":10}},
+"imperial-isthmian-wand":{"m":"2026-09-26T11:24:06","n":"Imperial Isthmian Wand","i":["https://i.imgur.com/XGwowJl.png"],"t":["ac","seasonal"],"d":["defaultdmg",27,33]},
+"isthmian-guard-2":{"m":"2026-09-26T17:18:35","n":"Isthmian Guard (2)","i":["https://i.imgur.com/oW9XzAC.png"],"t":["seasonal","elementalkind"]},
+"metrea":{"m":"2026-09-26T12:48:10","n":"Metrea","i":["https://i.imgur.com/pys2Rvh.png","https://i.imgur.com/VvD7sZm.png"]}
+}
