@@ -1,0 +1,16 @@
+{
+  "worker": "1-of-2",
+  "seed": 1022330348,
+  "cursor": 21,
+  "todoTotal": 45483,
+  "delayMs": 3000,
+  "stats": {
+    "fetched": 20,
+    "stored": 20,
+    "empty": 0,
+    "gone": 0,
+    "errors": 0,
+    "skippedParked": 0
+  },
+  "savedAt": "2026-10-01T09:58:11.084Z"
+}
