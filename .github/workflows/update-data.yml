@@ -45,10 +45,13 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           # The crawler only writes its own shard range, so staging is naturally
           # conflict-free: unmodified files produce no diff.
-          git add data/shards data/index.json data/search.json data/.sitemap-cache.json data/.crawl-state-*.json data/.crawl-errors.json 2>/dev/null || true
+          # -A (not explicit paths) so a missing optional file like
+          # .crawl-errors.json never aborts the whole staging.
+          git add -A data
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else
             git commit -m "data: update $(date -u +%F)"
+            git pull --rebase
             git push
           fi
