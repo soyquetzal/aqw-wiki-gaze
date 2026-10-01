@@ -10,6 +10,9 @@ on:
       limit:
         description: "Max pages to fetch in this run (0 = no limit)"
         default: "0"
+      worker:
+        description: 'Shard range: "0/2" (GHA default, shards 0-31), "1/2" (laptop), "all" (steal)'
+        default: "0/2"
 
 permissions:
   contents: write
@@ -33,14 +36,16 @@ jobs:
       - run: npm ci
 
       - name: Crawl
-        run: node tools/crawler/crawl.mjs --budget-minutes 300 --limit "${{ inputs.limit || 0 }}"
+        run: node tools/crawler/crawl.mjs --budget-minutes 300 --worker "${{ inputs.worker || '0/2' }}" --limit "${{ inputs.limit || 0 }}"
 
       - name: Commit data
         if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data
+          # The crawler only writes its own shard range, so staging is naturally
+          # conflict-free: unmodified files produce no diff.
+          git add data/shards data/index.json data/search.json data/.sitemap-cache.json data/.crawl-state-*.json data/.crawl-errors.json 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else

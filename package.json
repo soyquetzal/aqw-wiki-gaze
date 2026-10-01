@@ -4,7 +4,10 @@
   "type": "module",
   "description": "Crawler that builds the static preview data used by AQW Wiki Gaze.",
   "scripts": {
-    "crawl": "node tools/crawler/crawl.mjs"
+    "crawl": "node tools/crawler/crawl.mjs",
+    "crawl:gha": "node tools/crawler/crawl.mjs --worker 0/2 --budget-minutes 300",
+    "crawl:laptop": "node tools/crawler/crawl.mjs --worker 1/2 --budget-minutes 300",
+    "crawl:steal": "node tools/crawler/crawl.mjs --worker all --budget-minutes 300"
   },
   "dependencies": {
     "linkedom": "^0.18.5"
