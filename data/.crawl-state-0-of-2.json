@@ -1,16 +1,16 @@
 {
   "worker": "0-of-2",
-  "seed": 1653135795,
-  "cursor": 5684,
-  "todoTotal": 25661,
+  "seed": 1610263495,
+  "cursor": 5928,
+  "todoTotal": 19978,
   "delayMs": 2000,
   "stats": {
-    "fetched": 5683,
-    "stored": 5683,
+    "fetched": 5928,
+    "stored": 5928,
     "empty": 0,
     "gone": 0,
-    "errors": 1,
+    "errors": 0,
     "skippedParked": 0
   },
-  "savedAt": "2026-10-03T01:00:12.569Z"
+  "savedAt": "2026-10-03T09:23:27.677Z"
 }
