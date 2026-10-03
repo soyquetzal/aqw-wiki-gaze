@@ -17,9 +17,6 @@
   "prismatic-double-wings-ac": {
     "fails": 1
   },
-  "underworld-prisoner-0-ac": {
-    "fails": 1
-  },
   "thunderhead-helm": {
     "fails": 1
   },
@@ -27,6 +24,6 @@
     "fails": 1
   },
   "butter-moment": {
-    "fails": 1
+    "fails": 2
   }
 }
